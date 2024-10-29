@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        sh 'python3 --version'
+        bat 'python --version' // Replace 'python3' with 'python' if 'python3' is not available on Windows
       }
     }
     stage('hello') {
       steps {
-        sh 'python3 p1.py'
+        bat 'python p1.py' // Adjust to 'python' as well
       }
     }
   }
