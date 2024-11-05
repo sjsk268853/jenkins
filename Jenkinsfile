@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('version') {
       steps {
-        bat 'python --version' // Replace 'python3' with 'python' if 'python3' is not available on Windows
+        bat 'python --version' // Checks Python version
       }
     }
     stage('hello') {
       steps {
-        bat 'python p1.py' // Adjust to 'python' as well
+        bat 'C:\\Users\\hp\\AppData\\Local\\Programs\\Python\\Python311\\python.exe p1.py' // Execute the script directly
       }
     }
   }
